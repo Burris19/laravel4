@@ -30,3 +30,6 @@ Route::get('crearusuario',function(){
 	$usuario->save();
 	return "El usuario se ha almacenado en la base de datos correctamente";
 });
+
+//Route::get('usuarios','UsuariosController@usuario');
+Route::controller('usuarios','UsuariosController');
