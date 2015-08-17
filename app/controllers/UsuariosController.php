@@ -8,7 +8,8 @@ class UsuariosController extends BaseController {
 
 
   public function get_index(){
-    return "Nos encontramos en el index";
+    $usuarios = Usuario::all();
+    return View::make('usuarios.index')->with('usuarios',$usuarios);
   }
 
   public function get_nosotros(){
